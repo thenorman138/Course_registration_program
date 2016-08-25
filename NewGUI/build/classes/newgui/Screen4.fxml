@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newgui.Screen4Controller">
+   <children>
+      <ImageView fitHeight="105.0" fitWidth="115.0" layoutX="6.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../shield-logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="112.0" layoutY="27.0" prefHeight="51.0" prefWidth="221.0" text="Ivy League University">
+         <font>
+            <Font name="Kaiti TC Regular" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="276.0" layoutY="128.0" text="Thank You For Registering!" textFill="#1775c3">
+         <font>
+            <Font name="Kaiti TC Regular" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="homeBtn" layoutX="370.0" layoutY="542.0" mnemonicParsing="false" onAction="#homeAction" text="Logout" />
+      <TableView fx:id="table2" layoutX="50.0" layoutY="174.0" prefHeight="343.0" prefWidth="703.0">
+        <columns>
+          <TableColumn fx:id="id4" prefWidth="75.0" text="CRN" />
+          <TableColumn fx:id="dept4" prefWidth="84.0" text="Dept" />
+            <TableColumn fx:id="number4" prefWidth="66.0" text="Number" />
+            <TableColumn fx:id="title4" prefWidth="177.0" text="Title" />
+            <TableColumn fx:id="day4" prefWidth="93.0" text="Days" />
+            <TableColumn fx:id="time4" prefWidth="139.0" text="Time" />
+            <TableColumn fx:id="credits4" prefWidth="68.0" text="Credits" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
